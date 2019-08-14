@@ -18,7 +18,7 @@ function handleErrors(error){
 
 function style(){
     return gulp.src(stylesSrc)
-        .pipe(sourcemaps.init()) // Needs to be before sass()
+        .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(postcss([autoprefixer({
             browsers: ['last 2 versions']
