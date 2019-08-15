@@ -3,7 +3,7 @@ const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps'); 
 const postcss = require('gulp-postcss'); 
-const autoprefixer = require('gulp-autoprefixer'); 
+const autoprefixer = require('autoprefixer'); 
 const notify = require('gulp-notify');
 
 sourceDir = './site/'; 
@@ -11,18 +11,16 @@ destDir = './site/';
 stylesSrc = sourceDir + 'scss/**/*.scss'; 
 stylesDest = destDir + 'css/';
 
-function handleErrors(error){
-    notify().write(error);
-    console.log(error);
-}
+// function handleErrors(error){
+//     notify().write(error);
+//     console.log(error);
+// }
 
 function style(){
     return gulp.src(stylesSrc)
         .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(postcss([autoprefixer({
-            browsers: ['last 2 versions']
-        })]))
+        .pipe(postcss([autoprefixer()]))
         .pipe(sourcemaps.write('.')) // Needs to be before dest()
         .pipe(gulp.dest(stylesDest))
         .pipe(browserSync.stream())
