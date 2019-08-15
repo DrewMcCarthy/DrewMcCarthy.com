@@ -1,1 +1,0 @@
-{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAEA;EACI,6DAHuD;EAIvD,YAAY,EAAA","file":"style.css","sourcesContent":["$bgColor: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);;\r\n\r\nbody{\r\n    background: $bgColor;\r\n    color: white;\r\n}\r\n"]}
