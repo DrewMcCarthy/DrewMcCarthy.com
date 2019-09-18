@@ -1,10 +1,4 @@
 @import "variables";
+@import "mixin";
 @import "normalize";
-
-body{
-    background: $bgColor;
-    color: white;
-    h1 {
-        transform: scale(.4); // To show prefixes getting added
-    }
-}
+@import "debug";
