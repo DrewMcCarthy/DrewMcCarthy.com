@@ -1,5 +1,10 @@
-# BoilerPlateStatic
+# DrewMcCarthy.com
 
-1. Clone repository to new folder
-2. Run 'npm install' from command-line
-3. Run 'gulp watch' and start working
+My personal page for prospective employers to get to know me better.
+
+* HTML5
+* CSS3/SCSS
+* Vanilla JS
+* Bootstrap 4
+* Gulp
+* Font Awesome 4
