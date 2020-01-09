@@ -1,0 +1,157 @@
+@import '../../bootstrap-4.3.1/scss/bootstrap';
+
+
+body {
+    font-family: $font-primary;
+}
+
+$color-pri: rgba(0,0,255,.5);
+$bg-color2: #effcfd;
+$brand-primary: rgb(46, 202, 219);
+$brand-primary-overlay: linear-gradient(-50deg, rgba(46,202,219, .7) 40%, rgba(0,0,255, .7));
+$brand-secondary: rgba(255, 84, 78, .7);
+$brand-tertiary: rgb(182, 102, 228);
+
+
+.navbar {
+    background: rgba($color: #000000, $alpha: 0.7);
+    padding: 15px 0;
+    color: white;
+
+    &-brand {
+        color: white;
+        font-weight: bold;
+
+        &:hover {
+            color: white;
+        }
+    }
+    &__header {
+        display: flex;
+        width: 100%;
+    }
+    &__btn {
+        margin-left: auto;
+        border: solid 1px white;
+        color: white;
+        background: transparent;
+    }
+}
+
+.skill h4 {
+    display: inline;
+    margin-right: 20px;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.portfolio-filter {
+    width: 220px;
+    margin-left: 10px;
+
+    .btn {
+        width: 100%;
+        
+    }
+}
+
+
+.header {
+    background: $brand-primary-overlay, url('/site/images/working-desk.jpg') no-repeat center bottom;
+    background-size: cover;
+    min-height: 50vh;
+
+    @media (min-width: map-get($grid-breakpoints, 'lg')) {
+        min-height: 50vh;
+    }
+}
+
+.rad-0 {
+    border-radius: 0;
+}
+
+.profile-img {
+    border-radius: 100%;
+    margin: 30px 0;
+    height: 250px;
+    width: 200px;
+}
+
+
+.section {
+    padding: 100px 0;
+    
+    &__title {
+        font-family: $font-formal;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    &__hr {
+        border-bottom: solid 5px $brand-primary;
+        width: 10%;
+        margin: auto;
+    }
+
+    .btn {
+        border-radius: 0;
+        margin: 15px 0;
+        letter-spacing: 2px;
+        // background: $brand-primary;
+        border-color: $brand-primary;
+
+        &:hover {
+            background: white;
+            border-color: white;
+            color: $brand-primary;
+        }
+    }
+
+    &--inverse {
+        background: $brand-primary;
+        color: white;
+
+        .section__hr {
+            border-bottom: solid 5px white;
+        }
+    }
+}
+
+.portfolio-filter {
+    width: 220px;
+
+    .btn {
+        width: 100%;
+    }
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.card-header,
+.card-footer {
+    background: $brand-primary;
+    color: white;
+}
+
+.card-link {
+    color: white;
+}
+
+.btn-on-dark-bg {
+    background: transparent;
+    outline: solid 2px white;
+    color: white;
+}
+
+
+.scroll-snap-parent {
+    scroll-snap-type: mandatory;
+}
+
+.scroll-snap-child {
+    scroll-snap-align: start;
+}

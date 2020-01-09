@@ -4,10 +4,279 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Website</title>
-    <link rel="stylesheet" href="site/css/main.css" type="text/css" />
+    <title>Drew McCarthy</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./site/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./site/css/main.css" />
 </head>
 <body>
-    <h1>Heading</h1>
+    <!-- Header Section -->
+    <header id="header" class="section header text-center text-lg-left">
+            <div class="container h-100 text-white">
+                <div class="row h-100 align-items-center">
+                    <div class="col">
+                            <h1 class="display-4">Hello, <br>I'm <span class="font-weight-bold">Drew McCarthy</span></h1>
+                            <h5>Experienced software & data professional</h5>
+                            <a href="#about"><button class="btn rad-0 btn-lg btn-on-dark-bg">Learn More</button></a>
+                    </div>
+                    <div class="text-white"></div>
+                </div>
+            </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav class="navbar">
+        <div class="container navbar-expand-md">
+            <a href="#header" class="navbar-brand">Drew McCarthy</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-links-collapse">
+                <i class="fa fa-bars text-white navbar-toggler-icon"></i>
+            </button>
+
+            <div id="nav-menu" class="collapse navbar-collapse navbar-links-collapse">
+                <ul class="nav navbar-nav ml-md-auto" role="navigation">
+                    <li> <a class="text-white nav-link" href="#about">About</a> </li>
+                    <li> <a class="text-white nav-link" href="#skills">Skills</a> </li>
+                    <li> <a class="text-white nav-link" href="#portfolio">Portfolio</a> </li>
+                    <li> <a class="text-white nav-link" href="#resume">Resume</a> </li>
+                    <li> <a class="text-white nav-link" href="#contact">Contact</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section__title">
+                <h2>About Me</h2>
+                <div class="section__hr"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="site/images/professional.jpg" class="profile-img img-fluid">
+                </div>
+                <div class="col-md-12 d-flex">
+                    <div class="text-center">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare
+                            diam.
+                            Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare
+                            diam
+                            commodo nibh.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare
+                            diam.
+                            Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.
+                        </p>
+                        <p class="text-center">
+                            <a class="btn btn-outline-primary mt-3" href="gulpfile.js" download>
+                                <i class="fa fa-download"></i>
+                                Download Resume
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="text-center">
+        <div class="section section--inverse">
+            <div class="section__title">
+                <h2>Skills</h2>
+                <div class="section__hr"></div>
+            </div>
+            <div class="container">
+                <div class="row mw-100">
+                    <div class="col col-sm-6 skill">
+                        <h4>HTML5</h4>
+                        <span class="chart" data-percent="95">
+                            <span class="percent">95</span>
+                        </span>
+                    </div>
+                    <div class="col-12 col-sm-6 skill">
+                        <h4>CSS3</h4>
+                        <span class="chart" data-percent="85"> <span class="percent">85</span>
+                        </span>
+                    </div>
+                    <div class="col-md-4 col-sm-6 skill">
+                        <h4>jQuery</h4>
+                        <span class="chart" data-percent="80"> <span class="percent">80</span>
+                        </span>
+                    </div>
+                    <div class="col-md-4 col-sm-6 skill">
+                        <h4>WordPress</h4>
+                        <span class="chart" data-percent="80"> <span class="percent">80</span>
+                        </span>
+                    </div>
+                    <div class="col-md-4 col-sm-6 skill">
+                        <h4>Photoshop</h4>
+                        <span class="chart" data-percent="70"> <span class="percent">70</span>
+                        </span>
+                    </div>
+                    <div class="col-md-4 col-sm-6 skill">
+                        <h4>Illustrator</h4>
+                        <span class="chart" data-percent="65"> <span class="percent">65</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <!-- Use cards with a header and use images from Font Awesome for the categories. Card flips on click or hover with short description and link to Github -->
+    <section id="portfolio" class="section">
+        <div class="section__title">
+            <h2>Portfolio</h2>
+            <div class="section__hr"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-md-4">
+                    <div class="card my-4">
+                        <div class="card-header">
+                            <i class="card-img-top fa fa-bullseye fa-4x fa-fw"></i>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text font-weight-bold text-center">
+                                Darts DRM
+                            </p>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, veniam.
+                            </p>
+                            <div class="card-text">
+                                <ul class="list-inline d-flex justify-content-around align-items-center">
+                                    <li class="list-inline-item"><i class="fab fa-microsoft fa-2x"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-unity"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer text-white">
+                            <a href="#" class="card-link d-flex align-items-center">
+                                <i class="fab fa-github fa-2x"></i>
+                                <span class="card-subtitle ml-3">View on GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card my-4">
+                        <div class="card-header">
+                            <i class="card-img-top fa fa-code fa-4x fa-fw"></i>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, veniam.
+                            </p>
+                            <div class="card-text">
+                                <ul class="list-inline d-flex justify-content-around align-items-center">
+                                    <li class="list-inline-item"><i class="fab fa-html5 fa-2x"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-css3"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-js"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer text-white">
+                            <a href="#" class="card-link d-flex align-items-center">
+                                <i class="fab fa-github fa-2x"></i>
+                                <span class="card-subtitle ml-3">View on GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card my-4">
+                        <div class="card-header">
+                            <i class="card-img-top fa fa-code fa-4x fa-fw"></i>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, veniam.
+                            </p>
+                            <div class="card-text">
+                                <ul class="list-inline d-flex justify-content-around align-items-center">
+                                    <li class="list-inline-item"><i class="fab fa-html5 fa-2x"></i></li>
+                                    <li class="list-inline-item font-weight-bold">C#</li>
+                                    <li class="list-inline-item"><i class="fab fa-js"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer text-white">
+                            <a href="#" class="card-link d-flex align-items-center">
+                                <i class="fab fa-github fa-2x"></i>
+                                <span class="card-subtitle ml-3">View on GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section--inverse ">
+        <div class="section__title">
+            <h2>Contact</h2>
+            <div class="section__hr"></div>
+        </div>
+        <div class="container text-center">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" id="contact-name" class="form-control" placeholder="Name" required="required">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" id="contact-email" class="form-control" placeholder="Email" required="required">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="text" id="contact-company" class="form-control" placeholder="Company">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="contact-message" class="form-control" rows="4" placeholder="Message"
+                                required></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div id="success"></div>
+                        <button type="button" class="btn btn-on-dark-bg mb-5" onclick="contactSend()">Send Message</button>
+                    </form>
+                    <div class="social d-inline">
+                        <ul class="list-inline d-flex align-items-center justify-content-center">
+                            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-github fa-2x"></i></a></li>
+                            <li class="list-inline-item ml-4"><a href="#" class="text-white"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer class="section bg-dark text-white scroll-snap-child">
+        <div class="container text-center">
+            <p>Copyright &copy; 2019 Drew McCarthy</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./site/js/bootstrap.bundle.min.js"></script>
+    <script src="./site/js/script.js"></script>
 </body>
 </html>
