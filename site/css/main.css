@@ -16702,6 +16702,9 @@ body {
     color: white; }
     .section--inverse .section__hr {
       border-bottom: solid 5px white; }
+  @media (min-width: 992px) {
+    .section-interests {
+      padding-top: 0; } }
 
 .portfolio-filter {
   width: 220px; }
@@ -16709,9 +16712,11 @@ body {
     width: 100%; }
 
 .card-body {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1; }
+  padding-bottom: 0;
+  position: relative; }
+
+.card-icons {
+  margin-bottom: -30px; }
 
 .card-header,
 .card-footer {
@@ -16720,6 +16725,8 @@ body {
 
 .card-link {
   color: white; }
+  .card-link:hover {
+    color: white; }
 
 .btn-on-dark-bg {
   background: transparent;
@@ -16732,5 +16739,46 @@ body {
 
 .scroll-snap-child {
   scroll-snap-align: start; }
+
+.interest {
+  margin-bottom: 20px; }
+  .interest-title {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1; }
+  @media (min-width: 992px) {
+    .interest-title {
+      grid-column: 2 / span 1;
+      grid-row: 3 / span 2;
+      align-self: center; }
+      .interest-title .section__hr {
+        width: 80%; }
+    .interest-biking {
+      grid-column: 2 / span 1;
+      grid-row: 2 / span 1; }
+    .interest-development {
+      grid-column: 1 / span 1;
+      grid-row: 3 / span 1; }
+    .interest-hiking {
+      grid-column: 3 / span 1;
+      grid-row: 3 / span 1; }
+    .interest-darts {
+      grid-column: 1 / span 1;
+      grid-row: 4 / span 1; }
+    .interest-pool {
+      grid-column: 3 / span 1;
+      grid-row: 4 / span 1; }
+    .interest-boardgame {
+      grid-column: 2 / span 1;
+      grid-row: 5 / span 1; } }
+
+@media (min-width: 992px) {
+  .interests {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr 1fr 1fr 1fr; } }
+
+.portfolio-icons {
+  position: relative;
+  bottom: 0; }
 
 /*# sourceMappingURL=main.css.map */

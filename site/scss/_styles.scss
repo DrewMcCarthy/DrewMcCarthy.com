@@ -49,6 +49,7 @@ $brand-tertiary: rgb(182, 102, 228);
 }
 
 
+
 .header {
     background: $brand-primary-overlay, url('/site/images/working-desk.jpg') no-repeat center bottom;
     background-size: cover;
@@ -84,6 +85,8 @@ $brand-tertiary: rgb(182, 102, 228);
         border-bottom: solid 5px $brand-primary;
         width: 10%;
         margin: auto;
+
+
     }
 
     .btn {
@@ -108,6 +111,12 @@ $brand-tertiary: rgb(182, 102, 228);
             border-bottom: solid 5px white;
         }
     }
+
+    &-interests {
+        @media (min-width: map-get($grid-breakpoints, 'lg')) {
+            padding-top: 0;
+        }
+    }
 }
 
 .portfolio-filter {
@@ -119,7 +128,13 @@ $brand-tertiary: rgb(182, 102, 228);
 }
 
 .card-body {
-    flex-grow: 1;
+    padding-bottom: 0;
+    position: relative;
+    
+}
+
+.card-icons {
+    margin-bottom: -30px;
 }
 
 .card-header,
@@ -130,6 +145,9 @@ $brand-tertiary: rgb(182, 102, 228);
 
 .card-link {
     color: white;
+    &:hover {
+        color: white;
+    }
 }
 
 .btn-on-dark-bg {
@@ -145,4 +163,69 @@ $brand-tertiary: rgb(182, 102, 228);
 
 .scroll-snap-child {
     scroll-snap-align: start;
+}
+
+.interest {
+    margin-bottom: 20px;
+
+        &-title {
+            grid-column: 2 / span 1;
+            grid-row: 1 / span 1;
+        }
+
+    @media (min-width: map-get($grid-breakpoints, 'lg')) {
+
+        &-title {
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 2;
+        align-self: center;
+
+            .section__hr {
+                width: 80%;
+            }
+        }
+
+        &-biking {
+            grid-column: 2 / span 1;
+            grid-row: 2 / span 1;
+        }
+
+        &-development {
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 1;
+        }
+
+        &-hiking {
+            grid-column: 3 / span 1;
+            grid-row: 3 / span 1;
+        }
+
+        &-darts {
+            grid-column: 1 / span 1;
+            grid-row: 4 / span 1;
+        }
+
+        &-pool {
+            grid-column: 3 / span 1;
+            grid-row: 4 / span 1;
+        }
+        
+        &-boardgame {
+            grid-column: 2 / span 1;
+            grid-row: 5 / span 1;
+        }
+    }
+}
+
+.interests {
+    @media (min-width: map-get($grid-breakpoints, 'lg')) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: .5fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+.portfolio-icons {
+    position: relative;
+    bottom: 0;
 }
