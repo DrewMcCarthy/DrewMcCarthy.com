@@ -1,24 +1,17 @@
-// Determine if device can hover and add class to body
-const canHover = !(matchMedia('(hover: none)').matches);
-if (canHover) {
-    document.body.classList.add('can-hover');
-}
 
 async function contactSend() {
-    const uri = 'https://localhost:5201/api/forms';
-    var contactName = document.getElementById('contact-name');
+    const uri = "https://drewmccarthy.com/api/contact";
+    var contactName = document.getElementById("contact-name");
     var contactEmail = document.getElementById('contact-email');
     var contactCompany = document.getElementById('contact-company');
-    var message = document.getElementById('contact-message');
+    var contactMessage = document.getElementById("contact-message");
     var data = {};
     data['Name'] = contactName.value;
     data['Email'] = contactEmail.value;
     data['Company'] = contactCompany.value;
-    data['Message'] = message.value;
+    data['Message'] = contactMessage.value;
     data = JSON.stringify(data);
-
-    console.log('contactSend');
-    console.log('data: ' + data);
+    console.log(data);
 
     try {
         const response = await fetch(uri, {
@@ -28,19 +21,24 @@ async function contactSend() {
                 'Content-Type': 'application/json'
             }
         });
-        const result = await response.json();
-        console.log('Success: ', result);
+
+        if (!await response.ok) {
+            throw response.status + response.statusText;
+        }
+       
+        console.log('Success: ', response);
 
         // Update UI
         contactName.value = "";
         contactEmail.value = "";
         contactCompany.value = "";
-        message.value = "";
+        contactMessage.value = "";
     } catch (error) {
         console.error('Error: ', error);
     }
 };
 
+// Smooth Scroll
 $("a[href^='#']").click(function(e) {
     e.preventDefault();
 
@@ -53,6 +51,7 @@ $("a[href^='#']").click(function(e) {
     );
 });
 
+// Click anywhere to collapse menu
 $(document).on("click", function(e) {
     var navMenu = $("#nav-menu");
     if (!navMenu.is(e.target) && navMenu.has(e.target).length === 0) {

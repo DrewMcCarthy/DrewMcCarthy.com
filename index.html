@@ -38,7 +38,6 @@
                     <li> <a class="text-white nav-link" href="#about">About</a> </li>
                     <li> <a class="text-white nav-link" href="#interests">Interests</a> </li>
                     <li> <a class="text-white nav-link" href="#portfolio">Portfolio</a> </li>
-                    <li> <a class="text-white nav-link" href="#resume">Resume</a> </li>
                     <li> <a class="text-white nav-link" href="#contact">Contact</a> </li>
                 </ul>
             </div>
@@ -54,24 +53,20 @@
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <img src="site/images/professional.jpg" class="profile-img img-fluid">
+                    <img src="site/images/profile.jpg" class="profile-img img-fluid">
                 </div>
                 <div class="col-md-12 d-flex">
                     <div class="text-center">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare
-                            diam.
-                            Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare
-                            diam
-                            commodo nibh.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare
-                            diam.
-                            Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.
+                        <p>Hello, welcome to my webdev sandbox & website for prospective employers. 
+                           I've been working in the healthcare industry since 2010 as a DBA with a strong focus on database development and supporting our software engineers with data modeling, query tuning, and writing stored code for Oracle and SQL Server.
                         </p>
-                        <p class="text-center">
-                            <a class="btn btn-outline-primary mt-3" href="gulpfile.js" download>
-                                <i class="fa fa-download"></i>
-                                Download Resume
-                            </a>
+                        <p>   
+                           My passion for the last few years has been learning full-stack web development which for me means a lot of front-end focus in my spare time. I'm comfortable using either Python or .Net on the back-end and I try to use vanilla JS anywhere I can on the front-end.
+                           More recently I started working with <a href="https://reactjs.org/">ReactJS</a> and have really enjoyed the development experience especially when used with the static site generator <a href="https://www.gatsbyjs.org/">GatsbyJS</a>! 
+                        </p>
+                        <p>   
+                           I'm excited about the progress of web development and believe that a lot of the tech is maturing and I appreciate that the major libraries/frameworks put a lot of emphasis on the developer workflow and think they're doing a lot of things the right way.                           
+                           I'll be continuing my self-education and updating this and other websites as I learn more. My goal is to focus more on each individual project and add enough polish to make it "production quality" and share my work on GitHub.                            
                         </p>
                     </div>
                 </div>
@@ -112,7 +107,6 @@
     </section>
 
     <!-- Portfolio Section -->
-    <!-- Use cards with a header and use images from Font Awesome for the categories. Card flips on click or hover with short description and link to Github -->
     <section id="portfolio" class="section">
         <div class="section__title">
             <h2>Portfolio</h2>
@@ -130,18 +124,19 @@
                                 Darts DRM
                             </p>
                             <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, veniam.
+                                Local and online competitive dartboard application for mobile. Unity UI with a BLE device component
                             </p>
                             <div>
                                 <ul class="list-inline d-flex justify-content-around">
                                     <li class="list-inline-item"><i class="fab fa-microsoft fa-2x"></i></li>
                                     <li class="list-inline-item"><i class="fab fa-unity"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-bluetooth"></i></li>
                                 </ul>
                             </div>
                         </div>
                         
                         <div class="card-footer text-white">
-                            <a href="#" class="card-link d-flex align-items-center">
+                            <a href="https://github.com/DrewMcCarthy/DartsDRM" class="card-link d-flex align-items-center">
                                 <i class="fab fa-github fa-2x"></i>
                                 <span class="card-subtitle ml-3">View on GitHub</span>
                             </a>
@@ -157,21 +152,21 @@
                             <p class="card-text font-weight-bold text-center">
                                 DrewMcCarthy.com
                             </p>
-                            <p class="card-text blockquote">
-                                "Here. You're looking at here, sir. Everything that happens here is happening here."
+                            <p class="card-text">
+                                "...Here. You're looking at here, sir. Everything that happens here is happening here."
                             </p>
-                            <p class="blockquote-footer">Spaceballs</p>
                             <div>
                                 <ul class="list-inline d-flex justify-content-around align-items-center">
                                     <li class="list-inline-item"><i class="fab fa-html5 fa-2x"></i></li>
                                     <li class="list-inline-item"><i class="fab fa-css3"></i></li>
                                     <li class="list-inline-item"><i class="fab fa-js"></i></li>
+                                    <li class="list-inline-item">.NetCore</li>
                                 </ul>
                             </div>
                         </div>
                         
                         <div class="card-footer text-white">
-                            <a href="#" class="card-link d-flex align-items-center">
+                            <a href="https://github.com/DrewMcCarthy/DrewMcCarthy.com" class="card-link d-flex align-items-center">
                                 <i class="fab fa-github fa-2x"></i>
                                 <span class="card-subtitle ml-3">View on GitHub</span>
                             </a>
@@ -195,13 +190,13 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" id="contact-name" class="form-control" placeholder="Name" required="required">
+                                    <input type="text" id="contact-name" class="form-control" placeholder="*Name" required>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="email" id="contact-email" class="form-control" placeholder="Email" required="required">
+                                    <input type="email" id="contact-email" class="form-control" placeholder="*Email" required>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -215,7 +210,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <textarea name="message" id="contact-message" class="form-control" rows="4" placeholder="Message"
+                            <textarea name="message" id="contact-message" class="form-control" rows="4" placeholder="*Message"
                                 required></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
@@ -224,8 +219,8 @@
                     </form>
                     <div class="social d-inline">
                         <ul class="list-inline d-flex align-items-center justify-content-center">
-                            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-github fa-2x"></i></a></li>
-                            <li class="list-inline-item ml-4"><a href="#" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                            <li class="list-inline-item"><a href="https://github.com/DrewMcCarthy" class="text-white"><i class="fab fa-github fa-2x"></i></a></li>
+                            <li class="list-inline-item ml-4"><a href="http://linkedin.com/in/drew-r-mccarthy" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a></li>
                         </ul>
                     </div>
                 </div>
