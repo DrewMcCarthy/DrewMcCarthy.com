@@ -1,6 +1,6 @@
 
 async function submitForm(event) {
-    console.log(event);
+    // console.log(event);
     validateForm(event);
 }
 
@@ -8,7 +8,7 @@ async function validateForm(event) {
     if (!event.target.form) {
         return;
     }
-    
+
     var form = event.target.form;
     form.classList.add("was-validated");
 
@@ -33,7 +33,7 @@ async function contactSend(event) {
     data['Company'] = contactCompany.value;
     data['Message'] = contactMessage.value;
     data = JSON.stringify(data);
-    console.log(data);
+    // console.log(data);
 
     try {
         const response = await fetch(uri, {
@@ -48,13 +48,13 @@ async function contactSend(event) {
             throw response.status + response.statusText;
         }
        
-        console.log('Success: ', response);
-
         // Update UI
         contactName.value = "";
         contactEmail.value = "";
         contactCompany.value = "";
         contactMessage.value = "";
+
+        event.target.form.classList.remove("was-validated");
     } catch (error) {
         console.error('Error: ', error);
     }
