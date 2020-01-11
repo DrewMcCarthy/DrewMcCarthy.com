@@ -186,18 +186,18 @@
         <div class="container text-center">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-8 col-md-offset-2">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form name="sentMessage" id="contactForm" class="needs-validation" novalidate>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <input type="text" id="contact-name" class="form-control" placeholder="*Name" required>
-                                    <p class="help-block text-danger"></p>
+                                    <p class="invalid-feedback text-danger">Name is required</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="email" id="contact-email" class="form-control" placeholder="*Email" required>
-                                    <p class="help-block text-danger"></p>
+                                    <input type="email" id="contact-email" class="form-control" placeholder="*Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                                    <p class="invalid-feedback text-danger">A valid email is required</p>
                                 </div>
                             </div>
                         </div>
@@ -205,17 +205,16 @@
                             <div class="col">
                                 <div class="form-group">
                                     <input type="text" id="contact-company" class="form-control" placeholder="Company">
-                                    <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <textarea name="message" id="contact-message" class="form-control" rows="4" placeholder="*Message"
                                 required></textarea>
-                            <p class="help-block text-danger"></p>
+                            <p class="invalid-feedback text-danger">Please enter a message</p>
                         </div>
                         <div id="success"></div>
-                        <button type="button" class="btn btn-on-dark-bg mb-5" onclick="contactSend()">Send Message</button>
+                        <button type="button" class="btn btn-on-dark-bg mb-5" onclick="submitForm(event)">Send Message</button>
                     </form>
                     <div class="social d-inline">
                         <ul class="list-inline d-flex align-items-center justify-content-center">
