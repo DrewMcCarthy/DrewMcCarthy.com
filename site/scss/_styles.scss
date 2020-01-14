@@ -176,8 +176,8 @@ $brand-tertiary: rgb(182, 102, 228);
     @media (min-width: map-get($grid-breakpoints, 'lg')) {
 
         &-title {
-        grid-column: 2 / span 1;
-        grid-row: 3 / span 2;
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
         align-self: center;
 
             .section__hr {
@@ -186,33 +186,33 @@ $brand-tertiary: rgb(182, 102, 228);
         }
 
         &-biking {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+        }
+
+        &-development {
+            grid-column: 4 / span 1;
+            grid-row: 2 / span 1;
+        }
+
+        &-hiking {
             grid-column: 2 / span 1;
             grid-row: 2 / span 1;
         }
 
-        &-development {
-            grid-column: 1 / span 1;
-            grid-row: 3 / span 1;
-        }
-
-        &-hiking {
-            grid-column: 3 / span 1;
-            grid-row: 3 / span 1;
-        }
-
         &-darts {
-            grid-column: 1 / span 1;
-            grid-row: 4 / span 1;
+            grid-column: 5 / span 1;
+            grid-row: 1 / span 1;
         }
 
         &-pool {
-            grid-column: 3 / span 1;
-            grid-row: 4 / span 1;
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 1;
         }
         
         &-boardgame {
-            grid-column: 2 / span 1;
-            grid-row: 5 / span 1;
+            grid-column: 5 / span 1;
+            grid-row: 3 / span 1;
         }
     }
 }
@@ -220,8 +220,8 @@ $brand-tertiary: rgb(182, 102, 228);
 .interests {
     @media (min-width: map-get($grid-breakpoints, 'lg')) {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: .5fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 }
 
