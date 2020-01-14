@@ -1,6 +1,6 @@
 # DrewMcCarthy.com
 
-My personal page for prospective employers to get to know me better.
+My development sandbox and also for prospective employers to get to know me better.
 
 * HTML5
 * CSS3/SCSS

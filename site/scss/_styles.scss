@@ -229,3 +229,8 @@ $brand-tertiary: rgb(182, 102, 228);
     position: relative;
     bottom: 0;
 }
+
+.btn.btn-on-dark-bg:disabled {
+    background: white;
+    color: $brand-primary;
+}

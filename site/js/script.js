@@ -49,12 +49,11 @@ async function contactSend(event) {
         }
        
         // Update UI
-        contactName.value = "";
-        contactEmail.value = "";
-        contactCompany.value = "";
-        contactMessage.value = "";
-
+        event.target.form.reset();
         event.target.form.classList.remove("was-validated");
+        event.target.classList.add("animated", "bounceIn");
+        event.target.disabled = true;
+        event.target.innerText = "Thank You!";
     } catch (error) {
         console.error('Error: ', error);
     }
