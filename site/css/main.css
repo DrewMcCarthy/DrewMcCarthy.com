@@ -16737,6 +16737,10 @@ body {
   .interest-title {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1; }
+  .interest__img {
+    border-radius: 30px;
+    -webkit-box-shadow: 5px 5px 20px white;
+            box-shadow: 5px 5px 20px white; }
   @media (min-width: 992px) {
     .interest-title {
       grid-column: 3 / span 1;
@@ -16765,6 +16769,7 @@ body {
 
 @media (min-width: 992px) {
   .interests {
+    padding-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr; } }

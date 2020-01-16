@@ -168,10 +168,15 @@ $brand-tertiary: rgb(182, 102, 228);
 .interest {
     margin-bottom: 20px;
 
-        &-title {
-            grid-column: 2 / span 1;
-            grid-row: 1 / span 1;
-        }
+    &-title {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    &__img {
+        border-radius: 30px;
+        box-shadow: 5px 5px 20px white;
+    }
 
     @media (min-width: map-get($grid-breakpoints, 'lg')) {
 
@@ -218,7 +223,9 @@ $brand-tertiary: rgb(182, 102, 228);
 }
 
 .interests {
+    
     @media (min-width: map-get($grid-breakpoints, 'lg')) {
+        padding-top: 50px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
