@@ -16720,6 +16720,10 @@ body {
   .card-link:hover {
     color: white; }
 
+.card-img {
+  height: 50px;
+  width: 50px; }
+
 .btn-on-dark-bg {
   background: transparent;
   outline: solid 2px white;
